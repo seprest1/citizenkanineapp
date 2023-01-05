@@ -1,119 +1,46 @@
-
-
-
-  
-
-![REPO SIZE](https://img.shields.io/github/repo-size/citizenkanineapp/citizenkanineapp?style=flat-square)
-
-  
-
-![TOP_LANGUAGE](https://img.shields.io/github/languages/top/citizenkanineapp/citizenkanineapp?style=flat-square)
-
-  
-
-![FORKS](https://img.shields.io/github/forks/citizenkanineapp/citizenkanineapp?style=social)
-
 # Citizen Kanine
 
-_Duration: Two Week Sprint_
+<img src="https://i0.wp.com/thecitizenkanine.com/wp-content/uploads/2018/05/cropped-Logo_CitizenKanine_cropped.png?fit=953%2C499&ssl=1" alt="cklogo" width="350"/>
 
-  
+## Summary
 
-  ## Summary
-
-Citizen Kanine is a dog walking business based in Minneapolis - where each morning 'Pack Leaders' embark on a route to pick up dogs from client homes for their daily walk. On a typical day, the business walks 36+ dogs in small groups around Lake Harriet rain or shine. 
+[Citizen Kanine](https://thecitizenkanine.com/) is a dog walking business based in Minneapolis - where each morning 'Pack Leaders' embark on a route to pick up dogs from client homes for their daily walk. On a typical day, the business walks 36+ dogs in small groups around Lake Harriet rain or shine. 
  
-Our goal was to provide a solution to Citizen Kanine that streamlined their workflow. Our solution contains two separate workflows: an admin dashboard and a mobile view for employees. The admin portal provides a centralized location for the client to manage employees, client information, client scheduling, as well as invoicing. This portal is estimated to save our client multiple hours a month on invoicing alone. The huge win is that our client shouldn't have to reference multiple sources of information to complete monthly invoices.
+Our goal was to provide a solution to Citizen Kanine that would streamline their workflow. Their current process involves manually scheduling both employees and clients (and their dogs), assigning dogs to specific routes for their dog-walkers or "Pack Leaders", and updating their books using various lists of client information each month.
 
-The mobile view allows employees to keep track of their schedules, and manage the distribution of dogs between Pack Leaders on a daily basis, as well as efficiently checking in dogs walked each day. The daily data recorded by dog walkers--which dogs were checked in as 'walked,' which dogs were unscheduled or day-of cancellations--is sent directly to a database table. This table is queried via the admin portal to create monthly invoices for each client. The mobile view came with the hurdle of displaying loads of information in a user friendly way on a small display. 
+Our design is a web-based application with two views, an admin dashboard and a mobile view for employees. The admin portal provides a centralized location for our client to manage employees, client information, client scheduling, as well as invoicing. This tool is estimated to save our client multiple hours a month on invoicing alone. 
+
+The mobile view allows employees to keep track of their schedules, and manage the distribution of dogs on a daily basis, as well as efficiently checking in dogs walked each day. The daily data recorded by dog walkers (*whether dogs are checked in or no-shows*) is sent directly to a database table. This table is queried via the admin portal to create monthly invoices for each client. 
 
 This project was a team effort -  built in its entirety over the course of two weeks as a part of [Prime Digital Academy](www.primeacademy.io).
 
-## Approach:
+### *My Contribution*
 
-With this project being a much larger workload than previous projects in our experience, and the added layer of Client involvement planning was integral to results. Before starting development we spent a week scoping the project, connecting with the client to clarify their needs,  and setting up a timeline. 
+I, along with my classmate Blake Smith, spent the majority of my time working on the design and implementation of the front-end, as well as the mobile view. Our design philosophy was to create an application that was professional and playful, speaking to the nature of the business, while utilizing the company colors. I created the dashboard for load-balancing the routes of dogs, using ***React Beautiful DnD***. I also constructed the back-end for the map feature, which we were unable to complete within the timeframe, using ***Radar*** for geo-coding, ***Pigeon Maps*** and ***Map Tiler*** for the map iteslf. 
 
-##### Wireframe / User Flow Prototype:
+Visit our [demo version](https://citizenkanine.herokuapp.com/) using:  `username: admin | password: admin`.
+The application has conditional rendering based on screen size, to visit the mobile view on a browser, use the developer tools to change the screen size. 
+
+## Demo
+
+## Approach
+
+_Duration: Two Week Sprint_
+
+With this project being a much larger workload than previous projects in our experience, and the added layer of client involvement planning was integral to results. Before starting development we spent a week scoping the project, connecting with the client to clarify their needs,  and setting up a timeline. 
+
+##### Wireframes
   
 Through the sprint, our team met with the Client on multiple occasions to provide updates, and clarify questions. In order to remain on schedule, our group utilized a Kanban board to visualize tasks that were in-progress, completed, or blocked. This helped clarify which pieces of the puzzle still needed completion, and streamlined the team's workflow.
 
-![]([https://res.cloudinary.com/ddmwrgnrd/image/upload/v1668992553/Screen_Shot_2022-11-20_at_7.01.18_PM_tjohkv.png](https://res.cloudinary.com/ddmwrgnrd/image/upload/v1668992553/Screen_Shot_2022-11-20_at_7.01.18_PM_tjohkv.png))
+As a representation of the planning spent on this project - we have included the [scope document]((https://docs.google.com/document/d/1_sO_B9sY84xYKGdlWtzBYzdPIXpx9b63RNzQ3Ie6izc/)). This process involved spending time considering user flow, component structure, and design potential for the application. This experience also involved setting a timeline for certain features and was an interesting venture into estimating development time for a small team of developers.
 
-As a representation of the planning spent on this project - we have included the scope document. This process involved spending time considering user flow, component structure, and design potential for the application. This experience also involved setting a timeline for certain features and was an interesting venture into estimating development time for a small team of developers.
-
-[Scope Document with Wireframes](https://docs.google.com/document/d/1_sO_B9sY84xYKGdlWtzBYzdPIXpx9b63RNzQ3Ie6izc/)
-
-  
-
-If you would like to see a draft of the database structure created during scoping - we have included the relevant ERD. This shows how the tables interact with one another and gives context to functions within the program.
-
-  
-
-[Entity-Relationship Diagram](https://app.dbdesigner.net/designer/schema/563565)
-
-  
-
-  
-
-## Getting Started:
-
-  
-
-  
+## Getting Started
 
 ### Prerequisites
 
-  
-
 - React.js *(built on version 17.0.2)*
-
-  
-
-- Keys for Cloudinary & PidgeonMaps API's
-
-  
-
-- DotEnv file 
-
-
-
--  [Node.js](https://nodejs.org/en/)
-
-  
-
-- Axios
-
-  
-
-- Redux
-
-  
-
-- Redux-Saga
-
-  
-
-- [Material.UI](https://mui.com)
-
-  
-
-- Express
-
-  
-
-- Body-Parser
-
-  
-
-- 'PG'
-
-  
-
-- Database Manager
-
-  
-
-  
+- API keys for [Cloudinary](https://www.maptiler.com) & [MapTiler](https://www.maptiler.com).
 
 ### Installation
 Using your package manager - install the dependencies
@@ -126,12 +53,13 @@ In your database manager - create a database named `citizen_kanine` use the prov
 
 Populate dotEnv file with:
 
-> SERVER_SESSION_SECRET= 'string'
-> map_api_key= 'string'
-> CLOUDINARY_NAME= 'string'
-> CLOUDINARY_API_KEY= 'string'
-> CLOUDINARY_API_SECRET= 'string'
-
+```
+> SERVER_SESSION_SECRET= 'choose_a_secret_here'
+> map_api_key= 'your_api_key'
+> CLOUDINARY_NAME= 'your_api_name'
+> CLOUDINARY_API_KEY= 'your_api_key'
+> CLOUDINARY_API_SECRET= 'your_api_secret'
+```
 With your database set up - start the server.
 ```
 $ ~ npm run server
@@ -145,9 +73,9 @@ Navigate to http://localhost:3000 if the run client script doesn't automatically
 $ ~ npm run client
 ```
 
-Since the app is not client facing at this time - there is no registration page. You will have to add an account through a `SQL INSERT` in your database manager.
+Login: `username: admin | password: admin`.
 
-## Built With:
+### Built With:
 
 *  [React.js](https://reactjs.org/docs/getting-started.html)
 *  [Node.js](https://nodejs.org/en/docs/)
@@ -158,10 +86,6 @@ Since the app is not client facing at this time - there is no registration page.
 * [Passport](https://www.passportjs.org) - Secure Login & Account Management
 
 *For a full list of dependencies - see the Package.json*
-
-## Screen Shots
-
-  ![](/ScreenShots/Landing.png)
 
 ## Usage
 
@@ -221,14 +145,11 @@ Since the app is not client facing at this time - there is no registration page.
 
 Thanks to [Cloudinary](https://cloudinary.com) whose API supplied image upload capabilities for multiple parts of this application.
 
-Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped us make this application a reality.
+Thanks to the services that made the start of our Map display development possible: [Radar](https://radar.com), [MapTiler](https://www.maptiler.com) and [Pigeon Maps](https://pigeon-maps.js.org).
 
-Special thanks to the services that made the start of our Map display development possible:
+*Thanks to [Citizen Kanine](https://thecitizenkanine.com/) and Lisa Johnson for working with us and allowing us the opportunity to build something really cool.*
 
- - [Radar](https://radar.com) - for Geo Coding
- - [MapTiler](https://www.maptiler.com) 
- - [Pigeon Maps](https://pigeon-maps.js.org) - React Maps
-
+*Special thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped us make this application a reality.*
   
 
   

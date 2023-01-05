@@ -17,9 +17,9 @@ if (process.env.DB_PASS) {
   // const auth = params.auth.split(':');
 
   config = {
-    user: 'citizenkanine',
+    user: 'seprest',
     host: 'db.bit.io',
-    database: 'citizenkanine/citizen_kanine',
+    database: 'seprest/ckapp',
     password: process.env.DB_PASS, // key from bit.io database page connect menu
     port: 5432,
     ssl: true,

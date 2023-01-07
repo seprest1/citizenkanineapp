@@ -1,6 +1,11 @@
 # Citizen Kanine
+<div align="center">
+<img src="https://user-images.githubusercontent.com/105940054/211120109-3efdd6b5-1deb-4b6f-81f3-4648a6e4516e.png" alt="dogs!" width="300" height="200"/>
+<img src="https://i0.wp.com/thecitizenkanine.com/wp-content/uploads/2018/05/cropped-Logo_CitizenKanine_cropped.png?fit=953%2C499&ssl=1" alt="cklogo" width="300" height="200"/>
+<img src="https://user-images.githubusercontent.com/105940054/211119141-bcce5ead-21e4-4f14-a9a3-a04b6951b08b.jpeg" alt="dogs!" width="300" height="200"/>
+</div>
 
-<img src="https://i0.wp.com/thecitizenkanine.com/wp-content/uploads/2018/05/cropped-Logo_CitizenKanine_cropped.png?fit=953%2C499&ssl=1" alt="cklogo" width="350"/>
+
 
 ## Summary
 
@@ -21,7 +26,22 @@ I, along with my classmate Blake Smith, spent the majority of my time working on
 Visit our [demo version](https://citizenkanine.herokuapp.com/) using:  `username: admin | password: admin`.
 The application has conditional rendering based on screen size, to visit the mobile view on a browser, use the developer tools to change the screen size. 
 
-## Demo
+## Screenshots & Demo
+<div align="center">
+  <img width="600" alt="splash page" src="https://user-images.githubusercontent.com/105940054/211109777-47a0bd56-3eae-4479-995c-df500587b2c1.png">
+  <img width="600" alt="client page" src="https://user-images.githubusercontent.com/105940054/211109766-2a32fa7b-ff84-41b2-8400-549a5c107b49.png">
+  <img width="600" alt="client info" src="https://user-images.githubusercontent.com/105940054/211109795-0849c038-640c-4334-9b0d-d9b38356efb6.png">
+  <img width="600" alt="invoice page" src="https://user-images.githubusercontent.com/105940054/211109775-dca4b656-8f22-4ce3-8a22-ac14ded9fcb0.png">
+  <img width="600" alt="employee schedule" src="https://user-images.githubusercontent.com/105940054/211109816-34f3eab5-db8c-462b-801a-16bdfe86daa1.png">
+  <div>
+   <img width="300" alt="mobile routes" src="https://user-images.githubusercontent.com/105940054/211110054-61c7188a-dd57-4aaf-acba-73c048df59ad.png">
+   <img width="300" alt="mobile routes checked in" src="https://user-images.githubusercontent.com/105940054/211111860-8d6e4941-cd60-4e32-bf82-d1cd60e2f592.png">
+  </div>
+<img src="https://media4.giphy.com/media/zTvyYZhNV8MzOxKvzt/giphy.gif">
+ </div>
+
+
+
 
 ## Approach
 
